@@ -61,7 +61,7 @@ a:hover {
 }
 
 a:hover, a:focus {
-  color: #b8a07e;
+  color: #FE6E69;
   text-decoration: underline;
 }
 
@@ -86,17 +86,17 @@ p {
   margin: 25px 0;
   padding: 0;
   font-size: 15px;
-  color: #999999;
+  color: #FE6E69;
   line-height: 28px;
 }
 
 ::-moz-selection {
-  background: #b8a07e;
+  background: #FE6E69;
   color: #fff;
 }
 
 ::selection {
-  background: #b8a07e;
+  background: #FE6E69;
   color: #fff;
 }
 
@@ -180,10 +180,10 @@ p {
 
 nav {
   position: fixed;
-  background: #fff;
+  background: #b8a07e;
   z-index: 1000;
   width: 100%;
-  padding: 20px;
+  padding: 2px;
   display: none;
   -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
@@ -210,7 +210,7 @@ nav ul li a {
   position: relative;
   display: block;
   font-size: 14px;
-  color: #999999;
+  color: #000;
   font-family: 'Poppins', helvetica;
   font-weight: 500;
   line-height: 16px;
@@ -292,7 +292,7 @@ nav ul li a {
 #about {
   width: 100%;
   height: auto;
-  background: #f7f7f7;
+  background: #000;
   padding-top: 190px;
 }
 
