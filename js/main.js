@@ -79,9 +79,9 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Arthur Balboa.", "Programador.", "Pesquisador.", "Freelancer."],
-      typeSpeed: 100,
-      loop: true,
+      strings: ["Olá, eu sou Arthur Balboa.","Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"],
+      typeSpeed: 10,
+      loop: false,
     });
   });
 

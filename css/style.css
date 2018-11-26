@@ -260,16 +260,155 @@ nav ul li a {
 .header-content h1 {
   font-size: 40px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-top: 50px;
   text-transform: uppercase;
   color: #fff;
+}
+
+.example-one {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  position: relative;
+  mix-blend-mode: lighten;
+}
+@keyframes example-one-anim-1 {
+  0% {
+    clip: rect(30px, 450px, 102px, 0);
+  }
+  5.88235% {
+    clip: rect(29px, 450px, 68px, 0);
+  }
+  11.76471% {
+    clip: rect(100px, 450px, 75px, 0);
+  }
+  17.64706% {
+    clip: rect(93px, 450px, 7px, 0);
+  }
+  23.52941% {
+    clip: rect(57px, 450px, 86px, 0);
+  }
+  29.41176% {
+    clip: rect(37px, 450px, 97px, 0);
+  }
+  35.29412% {
+    clip: rect(98px, 450px, 70px, 0);
+  }
+  41.17647% {
+    clip: rect(51px, 450px, 56px, 0);
+  }
+  47.05882% {
+    clip: rect(69px, 450px, 105px, 0);
+  }
+  52.94118% {
+    clip: rect(42px, 450px, 24px, 0);
+  }
+  58.82353% {
+    clip: rect(5px, 450px, 96px, 0);
+  }
+  64.70588% {
+    clip: rect(97px, 450px, 57px, 0);
+  }
+  70.58824% {
+    clip: rect(87px, 450px, 115px, 0);
+  }
+  76.47059% {
+    clip: rect(38px, 450px, 28px, 0);
+  }
+  82.35294% {
+    clip: rect(83px, 450px, 95px, 0);
+  }
+  88.23529% {
+    clip: rect(108px, 450px, 86px, 0);
+  }
+  94.11765% {
+    clip: rect(53px, 450px, 10px, 0);
+  }
+  100% {
+    clip: rect(38px, 450px, 40px, 0);
+  }
+}
+@keyframes example-one-anim-2 {
+  0% {
+    clip: rect(104px, 450px, 86px, 0);
+  }
+  5.88235% {
+    clip: rect(87px, 450px, 55px, 0);
+  }
+  11.76471% {
+    clip: rect(8px, 450px, 74px, 0);
+  }
+  17.64706% {
+    clip: rect(114px, 450px, 34px, 0);
+  }
+  23.52941% {
+    clip: rect(72px, 450px, 12px, 0);
+  }
+  29.41176% {
+    clip: rect(106px, 450px, 102px, 0);
+  }
+  35.29412% {
+    clip: rect(67px, 450px, 103px, 0);
+  }
+  41.17647% {
+    clip: rect(65px, 450px, 33px, 0);
+  }
+  47.05882% {
+    clip: rect(42px, 450px, 49px, 0);
+  }
+  52.94118% {
+    clip: rect(61px, 450px, 46px, 0);
+  }
+  58.82353% {
+    clip: rect(105px, 450px, 64px, 0);
+  }
+  64.70588% {
+    clip: rect(39px, 450px, 45px, 0);
+  }
+  70.58824% {
+    clip: rect(34px, 450px, 1px, 0);
+  }
+  76.47059% {
+    clip: rect(42px, 450px, 57px, 0);
+  }
+  82.35294% {
+    clip: rect(108px, 450px, 44px, 0);
+  }
+  88.23529% {
+    clip: rect(81px, 450px, 67px, 0);
+  }
+  94.11765% {
+    clip: rect(96px, 450px, 58px, 0);
+  }
+  100% {
+    clip: rect(102px, 450px, 85px, 0);
+  }
+}
+.example-one:before, .example-one:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: url("../images/home-bg.jpg");
+  clip: rect(0, 0, 0, 0);
+}
+.example-one:after {
+  left: 2px;
+  text-shadow: -1px 0 red;
+  animation: example-one-anim-1 2s infinite linear alternate-reverse;
+}
+.example-one:before {
+  left: -2px;
+  text-shadow: 2px 0 blue;
+  animation: example-one-anim-2 2s infinite linear alternate-reverse;
 }
 
 .header-content p {
   font-size: 13px;
   letter-spacing: 5px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   text-transform: capitalize;
   color: #fff;
   font-weight: 500;
@@ -282,7 +421,7 @@ nav ul li a {
 
 .header-content .list-social li i {
   color: #fff;
-  font-size: 15px;
+  font-size: 30px;
 }
 
 /*-----------------------------------------------------------------------------------*/

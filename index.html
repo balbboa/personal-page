@@ -65,45 +65,47 @@
     <div class="container">
 
       <div class="header-content">
-        <script src="js/cplayer.js"></script>
-          <div id="app"></div>
-            <script>
-              let myPlayer = new cplayer({
-              element: document.getElementById('app'),
-              autoplay: true,
-              playlist: [
-                {
-                  src: 'Youre Mine.mp3',
-                  poster: 'images/youre mine.jpeg',
-                  name: 'Youre Mine',
-                  artist: 'Raving George feat. Oscar And The Wolf'
-                },
-                {
-                  src: 'Nothing really matters that much to me anymore.mp3',
-                  poster: 'images/astroblk.jpeg',
-                  name: 'Nothing really matters that much to me anymore',
-                  artist: 'Astroblk'
-                },
-                {
-                  src: 'brasil.mp3',
-                  poster: 'images/brasil.jpeg',
-                  name: 'brasil.',
-                  artist: 'jou beats.'
-                }
-              ],
-          })
-          </script>
-        <h1><span class="typed"></span></h1>
-        <p>Página pessoal</p>
+        <h1>
+           <div class="example-one" data-text="ARTHUR BALBOA">ARTHUR BALBOA</div>
+        </h1>
 
+        <p>Página pessoal</p>
         <ul class="list-unstyled list-social">
           <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-          <li><a href="#"><i class="ion-social-twitter"></i></a></li>
           <li><a href="#"><i class="ion-social-instagram"></i></a></li>
           <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-          <li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-          <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
         </ul>
+
+        <!-- start section radio -->
+                <script src="js/cplayer.js"></script>
+                  <div id="app"></div>
+                    <script>
+                      let myPlayer = new cplayer({
+                      element: document.getElementById('app'),
+                      autoplay: true,
+                      playlist: [
+                        {
+                          src: 'Youre Mine.mp3',
+                          poster: 'images/youre mine.jpeg',
+                          name: 'Youre Mine',
+                          artist: 'Raving George feat. Oscar And The Wolf'
+                        },
+                        {
+                          src: 'Nothing really matters that much to me anymore.mp3',
+                          poster: 'images/astroblk.jpeg',
+                          name: 'Nothing really matters that much to me anymore',
+                          artist: 'Astroblk'
+                        },
+                        {
+                          src: 'brasil.mp3',
+                          poster: 'images/brasil.jpeg',
+                          name: 'brasil.',
+                          artist: 'jou beats.'
+                        }
+                      ],
+                  })
+                  </script>
+                  <!-- End section header -->
       </div>
     </div>
   </div>
@@ -126,8 +128,7 @@
         <div class="col-lg-7">
           <div class="about-descr">
 
-            <p class="p-heading">Arthur Balboa. </p>
-            <p class="separator">EOQ.</p>
+            <p class="p-heading"><span class="typed"></span></p>
 
           </div>
 
