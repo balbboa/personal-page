@@ -28,7 +28,7 @@ $(document).ready(function() {
 
     target = $(target);
     $('html, body').stop().animate({
-      'scrollTop': target.offset().top - 80
+      'scrollTop': target.offset().top + 10
     }, 500, 'swing', function() {
       window.location.hash = target.selector;
       $(document).on("scroll", onScroll);
@@ -79,77 +79,12 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Olá, eu sou Arthur Balboa.","Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"],
-      typeSpeed: 10,
+      strings: ["[Abzu@localhost ~]$ python whoami.py^2000 \n\n Olá, eu sou Arthur Balboa. Sou pesquisador e desenvolvedor no Laboratório de Inovação\nTecnológica em Saúde, LAIS, localizado no Hospital Universitário Onofre Lopes. Também\n sou graduando do curso de Engenharia de Telecomunicações pela Universidade Federal do\n Rio Grande do Norte (UFRN).
+      \n\n"],
+      typeSpeed: 0,
       loop: false,
     });
   });
-
-
-  // ========================================================================= //
-  //  Owl Carousel Services
-  // ========================================================================= //
-
-
-  $('.services-carousel').owlCarousel({
-      autoplay: true,
-      loop: true,
-      margin: 20,
-      dots: true,
-      nav: false,
-      responsiveClass: true,
-      responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
-    });
-
-
-  // ========================================================================= //
-  //  Porfolio isotope and filter
-  // ========================================================================= //
-
-
-  var portfolioIsotope = $('.portfolio-container').isotope({
-    itemSelector: '.portfolio-thumbnail',
-    layoutMode: 'fitRows'
-  });
-
-  $('#portfolio-flters li').on( 'click', function() {
-    $("#portfolio-flters li").removeClass('filter-active');
-    $(this).addClass('filter-active');
-
-    portfolioIsotope.isotope({ filter: $(this).data('filter') });
-  });
-
-
-  // ========================================================================= //
-  //  magnificPopup
-  // ========================================================================= //
-
-  var magnifPopup = function() {
-    $('.popup-img').magnificPopup({
-      type: 'image',
-      removalDelay: 300,
-      mainClass: 'mfp-with-zoom',
-      gallery: {
-        enabled: true
-      },
-      zoom: {
-        enabled: true, // By default it's false, so don't forget to enable it
-
-        duration: 300, // duration of the effect, in milliseconds
-        easing: 'ease-in-out', // CSS transition easing function
-
-        // The "opener" function should return the element from which popup will be zoomed in
-        // and to which popup will be scaled down
-        // By defailt it looks for an image tag:
-        opener: function(openerElement) {
-          // openerElement is the element on which popup was initialized, in this case its <a> tag
-          // you don't need to add "opener" option if this code matches your needs, it's defailt one.
-          return openerElement.is('img') ? openerElement : openerElement.find('img');
-        }
-      }
-    });
-  };
-
 
   // Call the functions
   magnifPopup();

@@ -439,16 +439,18 @@ nav ul li a {
 }
 
 #about .about-descr .p-heading {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  text-align: left;
+  font-family: 'Teletype';
+  font-size: 18px;
+  text-align: justify;
 }
 
 #about .about-descr .separator {
   max-width: 80%;
   margin-bottom: 0;
-  text-align: left;
+  text-align: justify;
 }
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*   Services
