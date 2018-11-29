@@ -79,11 +79,27 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["[Abzu@localhost ~]$ python whoami.py^2000 \n\n Olá, eu sou Arthur Balboa. Sou pesquisador e desenvolvedor no Laboratório de Inovação\nTecnológica em Saúde, LAIS, localizado no Hospital Universitário Onofre Lopes. Também\n sou graduando do curso de Engenharia de Telecomunicações pela Universidade Federal do\n Rio Grande do Norte (UFRN).\n\n Usuário Linux e entusiasta da segurança da informação."],
+      strings: ["[Abzu@localhost ~]$ python whoami.py^2000 \n\n Olá, eu sou Arthur Balboa. Sou pesquisador e desenvolvedor no Laboratório de Inovação Tecnológica em Saúde, LAIS, localizado no Hospital Universitário Onofre Lopes. Também sou graduando do curso de Engenharia de Telecomunicações pela Universidade Federal do Rio Grande do Norte (UFRN).\n\n Usuário Linux e entusiasta da segurança da informação.\n\n Apaixonado por café, música e Niilismo."],
       typeSpeed: 0,
       loop: false,
     });
   });
+  
+  // ========================================================================= //
+  //  Owl Carousel Services
+  // ========================================================================= //
+
+
+  $('.services-carousel').owlCarousel({
+      autoplay: true,
+      loop: true,
+      margin: 20,
+      dots: true,
+      nav: false,
+      responsiveClass: true,
+      responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
+    });
+
 
   // Call the functions
   magnifPopup();
