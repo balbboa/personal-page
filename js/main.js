@@ -79,7 +79,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["[Abzu@localhost ~]$ python whoami.py^2000 \n\n Olá, eu sou Arthur Balboa. Sou pesquisador e desenvolvedor no Laboratório de Inovação\nTecnológica em Saúde, LAIS, localizado no Hospital Universitário Onofre Lopes. Também\n sou graduando do curso de Engenharia de Telecomunicações pela Universidade Federal do\n Rio Grande do Norte (UFRN).\n Usuário Linux e entusiasta da segurança da informação."],
+      strings: ["[Abzu@localhost ~]$ python whoami.py^2000 \n\n Olá, eu sou Arthur Balboa. Sou pesquisador e desenvolvedor no Laboratório de Inovação\nTecnológica em Saúde, LAIS, localizado no Hospital Universitário Onofre Lopes. Também\n sou graduando do curso de Engenharia de Telecomunicações pela Universidade Federal do\n Rio Grande do Norte (UFRN).\n\n Usuário Linux e entusiasta da segurança da informação."],
       typeSpeed: 0,
       loop: false,
     });
