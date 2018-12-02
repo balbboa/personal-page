@@ -42,6 +42,7 @@ a {
 }
 
 a:hover {
+  color: #FE6E69;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -413,75 +414,13 @@ nav ul li a {
   font-size: 30px;
 }
 
-/*-----------------------------------------------------------------------------------*/
-/*   Services
-/*-----------------------------------------------------------------------------------*/
-
-#services {
-  background: #f7f7f7;
-  position: relative;
-  padding-bottom: 80px;
+.header-content .list-social li i:hover {
+  color: #FE6E69;
+  font-size: 30px;
 }
-
-.owl-item {
-  float: left;
-}
-.services-block span {
-  margin: 10px 0;
-  position: relative;
-  font-size: 13px;
-  color: #292929;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  text-transform: uppercase;
-  display: block;
-}
-
-.services-block .separator {
-  margin: 0;
-  font-size: 13px;
-  line-height: 22px;
-}
-
-.services-block i {
-  font-size: 44px;
-  color: #b8a07e;
-  line-height: 44px;
-}
-
-
-.services-carousel  .owl-stage-outer {
-  overflow: hidden;
-}
-
-.services-carousel .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-.services-carousel .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px !important;
-  height: 12px !important;
-  border-radius: 50%;
-  border: 0;
-  padding: 0 !important;
-  background-color: #ddd;
-  cursor: pointer;
-}
-
-.services-carousel .owl-dot.active {
-  background-color: #b8a07e;
-}
-
-.owl-nav {
-  display: none;
-}
-
 
 /*-----------------------------------------------------------------------------------*/
-/*  Aout-us
+/*  About
 /*-----------------------------------------------------------------------------------*/
 
 #about {
@@ -524,32 +463,37 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #services {
-  background: #f7f7f7;
+  background: #000;
   position: relative;
   padding-bottom: 80px;
+  padding-top: 80px;
 }
 
 .owl-item {
   float: left;
 }
 .services-block span {
-  margin: 10px 0;
-  position: relative;
-  font-size: 13px;
-  color: #292929;
+  font-family: 'Teletype';
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #b8a07e;
+  text-align:center;
   letter-spacing: 0.1em;
   font-weight: 500;
-  text-transform: uppercase;
   display: block;
 }
 
 .services-block .separator {
-  margin: 0;
-  font-size: 13px;
+  margin-bottom: 50px;
+  font-family: 'Teletype';
+  text-align: center;
+  font-size: 18px;
   line-height: 22px;
 }
 
 .services-block i {
+  margin-bottom: 50px;
+  margin-left: 110px;
   font-size: 44px;
   color: #b8a07e;
   line-height: 44px;
@@ -651,7 +595,7 @@ nav ul li a {
 }
 
 #footer .socials-media ul li a:hover {
-  color: #b8a07e;
+  color: #FE6E69;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;

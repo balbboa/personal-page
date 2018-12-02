@@ -134,16 +134,6 @@
     max-width: 100%;
     margin-bottom: 0;
   }
-  /* portfolio */
-  #portfolio .portfolio-list .nav li {
-    float: none;
-    margin: 20px;
-    display: inline-block;
-  }
-  /* journal */
-  #journal .journal-block .journal-info {
-    margin-bottom: 30px;
-  }
   /* Contact */
   .contact-contact {
     margin-bottom: 30px;
@@ -205,16 +195,6 @@
     max-width: 100%;
     margin-bottom: 0;
   }
-  /* portfolio */
-  #portfolio .portfolio-list .nav li {
-    float: none;
-    margin: 10px;
-    display: inline-block;
-  }
-  /* journal */
-  #journal .journal-block .journal-info {
-    margin-bottom: 30px;
-  }
   /* Contact */
   .contact-contact {
     margin-bottom: 30px;
@@ -275,15 +255,6 @@
   #about .about-descr .separator {
     max-width: 100%;
     margin-bottom: 0;
-  }
-  /* portfolio */
-  #portfolio .portfolio-list .nav li {
-    float: none;
-    margin: 20px;
-  }
-  /* journal */
-  #journal .journal-block .journal-info {
-    margin-bottom: 30px;
   }
   /* Contact */
   .contact-contact {
