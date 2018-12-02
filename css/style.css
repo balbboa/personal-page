@@ -463,10 +463,9 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #services {
-  background: #000;
+  background: #000;;
   position: relative;
   padding-bottom: 80px;
-  padding-top: 80px;
 }
 
 .owl-item {
@@ -494,6 +493,7 @@ nav ul li a {
 }
 
 .services-block i {
+  margin-top: auto;
   font-size: 44px;
   color: #b8a07e;
   line-height: 44px;
