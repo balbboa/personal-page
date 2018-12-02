@@ -248,7 +248,7 @@ nav ul li a {
 }
 
 .header-content h1 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   margin-top: 50px;
   text-transform: uppercase;
@@ -256,7 +256,7 @@ nav ul li a {
 }
 
 .example-one {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   color: white;
   position: relative;
@@ -475,10 +475,12 @@ nav ul li a {
 .services-block span {
   font-family: 'Teletype';
   margin-bottom: 10px;
-  font-size: 24px;
+  position: relative;
+  font-size: 15px;
   color: #b8a07e;
-  text-align:center;
+  text-align:left;
   letter-spacing: 0.1em;
+  text-transform: uppercase;
   font-weight: 500;
   display: block;
 }
@@ -486,14 +488,12 @@ nav ul li a {
 .services-block .separator {
   margin-bottom: 50px;
   font-family: 'Teletype';
-  text-align: center;
-  font-size: 18px;
+  text-align: justify;
+  font-size: 15px;
   line-height: 22px;
 }
 
 .services-block i {
-  margin-bottom: 50px;
-  margin-left: 110px;
   font-size: 44px;
   color: #b8a07e;
   line-height: 44px;
