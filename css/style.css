@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  color: #292929;
+  color: #000;
   font-weight: 600;
 }
 
@@ -534,20 +534,17 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #contact {
-  height: auto;
   width: 100%;
   background: #b8a07e;
+  padding-bottom: 20px;
 }
 
 .contact-details {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   color: #000;
 }
 
 .contact-details li {
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 
 .contact-details li i {
@@ -560,8 +557,11 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #footer {
-  background: #f7f7f7;
+  background: url("../images/jelly.gif");
   padding-top: 20px;
+  background-size: cover;
+  background-position: center;
+  height: 125px;
 }
 
 #footer .socials-media {
@@ -582,35 +582,21 @@ nav ul li a {
 
 #footer .socials-media ul li a {
   font-size: 24px;
-  color: #999;
+  color: #fff;
   letter-spacing: 0.1em;
   font-weight: 500;
-  background: transparent;
   text-transform: uppercase;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
 }
 
 #footer .socials-media ul li a:hover {
   color: #FE6E69;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
 }
 
 #footer p {
+  color: #fff;
   font-size: 12px;
   letter-spacing: 0.1em;
   font-weight: 500;
   margin-top: 0;
   text-transform: uppercase;
-}
-
-.credits {
-  font-size: 13px;
 }
