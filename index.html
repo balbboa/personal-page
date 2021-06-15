@@ -36,13 +36,11 @@
 
 <body>
 
-
-  <!-- start section navbar -->
   <nav id="main-nav">
     <div class="row">
       <div class="container">
-        <div class="logo">
-          <a href="index.html"><img src="images/blanka-font.png" alt="logo"></a>
+        <div class="logo my-1">
+          <a href="index.html"><img src="images/moon.svg" alt="logo"></a>
         </div>
 
         <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
@@ -56,10 +54,7 @@
       </div>
     </div>
   </nav>
-  <!-- End section navbar -->
 
-
-  <!-- start section header -->
   <div id="header" class="home">
 
     <div class="container">
@@ -71,63 +66,15 @@
 
         <p>Página pessoal</p>
         <ul class="list-unstyled list-social">
-          <li><a href="https://www.facebook.com/xabzu" target="_blank"><i class="ion-social-facebook"></i></a></li>
           <li><a href="https://www.instagram.com/balbboa_" target="_blank"><i class="ion-social-instagram"></i></a></li>
           <li><a href="https://github.com/balbboa" target="_blank"><i class="ion-social-github"></i></a></li>
           <li><a href="https://www.linkedin.com/in/balbboa/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
-          <li><a href="https://www.youtube.com/channel/UCzU0Xq1qeFFfYNrE4sFRduw" target="_blank"><i class="ion-social-youtube"></i></a></li>
-          <li><a href="https://steamcommunity.com/id/elpsymoon/" target="_blank"><i class="ion-steam"></i></a></li>
         </ul>
-
-        <!-- start section radio -->
-                <script src="js/cplayer.js"></script>
-                  <div id="app"></div>
-                    <script>
-                      let myPlayer = new cplayer({
-                      element: document.getElementById('app'),
-                      autoplay: true,
-                      playlist: [
-                        {
-                          src: 'sink-into-the-floor.mp3',
-                          poster: 'images/feng.png',
-                          name: 'Sink into the floor',
-                          artist: 'Feng Suave'
-                        },
-                        {
-                          src: 'Lovefool.mp3',
-                          poster: 'images/lovefool.png',
-                          name: 'Lovefool',
-                          artist: 'No Vacation'
-                        },
-                        {
-                          src: 'Pride.mp3',
-                          poster: 'images/pride.png',
-                          name: 'Pride',
-                          artist: 'Brahny'
-                        },
-                        {
-                          src: 'Italo Disco.mp3',
-                          poster: 'images/italo.png',
-                          name: 'Italo Disco',
-                          artist: 'Last Dinosaurs'
-                        },
-                        {
-                          src: 'Nothing really matters that much to me anymore.mp3',
-                          poster: 'images/astroblk.jpeg',
-                          name: 'Nothing really matters that much to me anymore',
-                          artist: 'Astroblk'
-                        }
-                      ],
-                  })
-                  </script>
-                  <!-- End section header -->
+                   
       </div>
     </div>
   </div>
-  <!-- End section header -->
 
-
-  <!-- start section about us -->
   <div id="about" class="paddsection">
     <div class="container">
       <div class="row justify-content-between">
@@ -135,71 +82,94 @@
         <div class="col-lg-4 ">
           <div class="div-img-bg">
             <div class="about-img">
-              <img src="images/me2.jpg" class="img-responsive" alt="me">
+              <img src="images/profile.jpg" class="img-responsive" alt="me">
             </div>
           </div>
         </div>
 
         <div class="col-lg-7">
           <div class="about-descr">
-
             <p class="p-heading"><span class="typed" style="white-space:pre-line"></span></p>
-
-
           </div>
-
         </div>
+
       </div>
     </div>
   </div>
-  <!-- end section about us -->
 
+  <div id="services" class="paddsection">
+    <div class="container d-flex flex-column align-items-center">
+      <h2 class="text-white ">Características</h2>
+      <p class="text-center">Desenvolvimento da interface de produtos web, alinhando conceitos de UI/UX (estética e funcionalidade),
+      design inteligente, criativo, acessível, que ofereçam uma experiência visual atraente, e
+      que de fato ajude pessoas e solucione problemas.</p>
 
-  <!-- start section services -->
-  <div id="services">
-    <div class="container">
+        <div class="row justify-content-between mt-3">
 
-        <div class="services-carousel owl-theme">
-
-
-          <div class="services-block text-center">
-
-            <i class="ion-social-tux"></i>
-            <span class="text-center">GNU/Linux</span>
-            <p class="separator text-center">Debian ♥</p>
-
+          <div class="col-lg-4 d-flex flex-column align-items-center"> 
+            <img src="images/experience.png" alt="">
+            <h3 class="mt-3">User experience</h3>
+            <p class="text-center">soluções atraentes e inovadoras a partir de análises, testes e processos que tornam
+            as interfaces interativas, mais funcionais e intuitivas para os usuários.</p>
           </div>
 
-          <div class="services-block text-center">
-
-            <i class="ion-social-html5"></i>
-            <span class="text-center">Front-end dev</span>
-
+          <div class="col-lg-4 d-flex flex-column align-items-center"> 
+            <img src="images/optimization.png" alt="">
+            <h3 class="mt-3">Performance</h3>
+            <p class="text-center">otimização de páginas, melhorando a velocidade de carregamento
+            dos sites, proporcionando uma sensação de leveza e ótima experiência de acesso aos usuários.</p>
           </div>
 
-          <div class="services-block text-center">
-            
-            <i class="ion-social-android"></i>
-            <span class="text-center">Mobile dev</span>
-            <p class="separator text-center">Ando me arriscando e aprendendo React Native hehe</p>
-
+          <div class="col-lg-4 d-flex flex-column align-items-center"> 
+            <img src="images/ui.png" alt="">
+            <h3 class="mt-3">Front-End</h3>
+            <p class="text-center">desenvolvimento de aplicações utilizando as melhores 
+            práticas, estruturando usabilidade, layouts realmente intuitivos, atraentes e funcionais
+            para todos os públicos.
+            </p>
           </div>
-
-          <div class="services-block text-center">
-
-            <i class="ion-wifi"></i>
-            <span class="text-center">Redes</span>
-
-          </div>
-
         </div>
 
+        <div class="row justify-content-between mt-5">
+        <div class="col-lg-4 d-flex flex-column align-items-center"> 
+          <img src="images/online-shop.png" alt="">
+          <h3 class="mt-3">e-Commerce</h3>
+          <p class="text-center">customização em várias plataformas de e-commerce, otimizações e
+           redesign, tornando uma loja mais impactante e eficaz, trazendo alta performance em vendas
+           na era digital.
+          </p>
+        </div>
+
+        <div class="col-lg-4 d-flex flex-column align-items-center"> 
+          <img src="images/seo.png" alt="">
+          <h3 class="mt-3">Seo</h3>
+          <p class="text-center">aplicando as melhores técnicas afim de melhorar o posicionamento
+           do seu site no resultado de buscas do Google.
+          </p>
+        </div>
+
+        <div class="col-lg-4 d-flex flex-column align-items-center"> 
+          <img src="images/responsive.png" alt="">
+          <h3 class="mt-3">Design responsivo</h3>
+          <p class="text-center">criação de projetos com design responsivo, acessíveis a todos
+           os usuários, independente do dispositivo, com ótima qualidade em todas as resoluções
+           de tela.
+          </p>
+        </div>
+      </div>
+      </div>
     </div>
-
   </div>
-  <!-- end section services -->
 
-  <!-- start sectoion contact -->
+  <div id="projects" class="paddsection">
+    <div class="container d-flex flex-column align-items-center">
+      <h2 class="text-white ">Projetos</h2>
+      <p class="text-center">Utilizo técnicas de ux e design thinking no desenvolvimento de projetos com
+      design inteligente, criativo, acessível, que ofereçam uma experiência visual atraente, e
+      que de fato ajude pessoas e solucione problemas.</p>
+    </div>
+  </div>
+
   <div id="contact" class="paddsection">
     <div class="container">
       <div class="contact-block1">
@@ -208,11 +178,11 @@
           <div class="col-lg-6">
             <div class="contact-contact">
 
-              <h2 class="mb-30">Contato</h2>
+              <h2 class="mb-30 text-white">Contato</h2>
 
               <ul class="contact-details">
-                <li><i class="ion-earth"></i><span> Natal, Brazil</span></li>
-                <li><i class="ion-social-whatsapp"></i><span> (84)99431-2644</span></li>
+                <li><i class="ion-earth"></i><span> Natal - RN</span></li>
+                <li><i class="ion-social-whatsapp"></i><span> (84)99412-9804</span></li>
                 <li><i class="ion-ios-email"></i><span>  abmm_arthur@hotmail.com</span></li>
                <!--  <li><i class="ion-ios-book"></i><a href="cv/cv.pdf" target="_blank"><span style="color:red"> Currículo Vitae</span></a></li> -->
               </ul>
@@ -229,16 +199,14 @@
 
   <!-- start section footer -->
   <div id="footer" class="text-center">
+    
     <div class="container">
       <div class="socials-media text-center">
 
         <ul class="list-unstyled">
-          <li><a href="https://www.facebook.com/xabzu" target="_blank"><i class="ion-social-facebook"></i></a></li>
           <li><a href="https://www.instagram.com/balbboa_" target="_blank"><i class="ion-social-instagram"></i></a></li>
           <li><a href="https://github.com/balbboa" target="_blank"><i class="ion-social-github"></i></a></li>
           <li><a href="https://www.linkedin.com/in/balbboa/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
-          <li><a href="https://www.youtube.com/channel/UCzU0Xq1qeFFfYNrE4sFRduw" target="_blank"><i class="ion-social-youtube"></i></a></li>
-          <li><a href="https://steamcommunity.com/id/elpsymoon/" target="_blank"><i class="ion-steam"></i></a></li>
         </ul>
 
       </div>
@@ -254,12 +222,6 @@
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="lib/typed/typed.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="lib/isotope/isotope.pkgd.min.js"></script>
-
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
