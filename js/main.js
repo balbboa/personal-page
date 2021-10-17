@@ -79,7 +79,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["[Abzu@localhost ~]$ python whoami.py^2000 \n\n Olá, eu sou Arthur Balboa. Sou pesquisador e desenvolvedor web. Possuo Técnico em Redes de computadores, sou Bacharel em Ciências e Tecnologia e estudante de Engenharia da Computação pela Universidade Federal do Rio Grande do Norte (UFRN).\n\n Possuo experiência nas ferramentas: HTML5, CSS3, Sass, Bootstrap, JQuery, React, Next.Js, NodeJS, Wordpress e Angular. E nas linguagens de programação: Python, JavaScript, PHP, C, C# e C++.\n\n Usuário Linux, amante do Front-end e entusiasta da segurança da informação.\n\n Louco por chá mate gelado, esportes e música."],
+      strings: ["[Abzu@localhost ~]$ python whoami.py^2000 \n\n Olá, eu sou Arthur Balboa. Sou pesquisador e desenvolvedor web. Possuo Técnico em Redes de computadores, sou Bacharel em Ciências e Tecnologia e estudante de Engenharia da Computação pela Universidade Federal do Rio Grande do Norte (UFRN).\n\n Também faço parte do programa de residência em Tecnologia da Informação no Tribunal Regional Federal da 5ª Região (Pós-graduação).\n\n Possuo experiência nas ferramentas: HTML5, CSS3, Sass, Bootstrap, JQuery, React, Next.Js, NodeJS, Wordpress e Angular. E nas linguagens de programação: Python, JavaScript, PHP, C, C# e C++.\n\n Usuário Linux, amante do Front-end e entusiasta da segurança da informação.\n\n guaraná do amazonas, djavan e praias vazias ♥"],
       typeSpeed: 0,
       loop: false,
     }
