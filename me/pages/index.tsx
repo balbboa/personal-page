@@ -2,6 +2,7 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import type { NextPage } from 'next'
 import { Fragment } from 'react'
+import Container from '../components/Container'
 
 const navigation = [
   { name: 'Início', href: '#' },
@@ -12,6 +13,7 @@ const navigation = [
 
 const Home: NextPage = () => {
   return (
+    <Container title='Balboa'>
     <div className="relative bg-white overflow-hidden">
     <div className="max-w-7xl mx-auto">
       <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
@@ -141,6 +143,7 @@ const Home: NextPage = () => {
       />
     </div>
   </div>
+  </Container>
   )
 }
 
