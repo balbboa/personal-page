@@ -1,8 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 body {
   padding: 0;
   margin: 0;
+  background-color: #07061f;
+  font-family: 'Anonymous Pro', monospace;
 }
+
