@@ -163,7 +163,7 @@ const Home: NextPage = () => {
 
 
       <div id="about" className="py-10 h-full w-full flex flex-col items-center justify-center relative ">
-        <h1 className='text-teal-400 text-4xl py-12 font-extrabold'>Sobre</h1>
+        <h1 className='text-white text-4xl py-12 font-extrabold'>Sobre</h1>
         <div className="flex flex-col lg:flex-row justify-around w-full">
           <div
             className="self-start pb-10 mx-6 md:mx-0"
@@ -173,12 +173,11 @@ const Home: NextPage = () => {
           <div className='relative mx-6 md:mx-0 sm:w-full md:w-2/4 text-teal-400'>
             <Typewriter
               onInit={(typewriter) => {
-                loop: true
                 typewriter
                   .changeDelay(20)
                   .typeString("[Abzu@localhost ~]$ python whoami.py")
                   .pauseFor(1000)
-                  .typeString("<br/><br/> Olá, eu sou Arthur Balboa. Sou pesquisador e desenvolvedor web. Possuo Técnico em Redes de computadores, sou Bacharel em Ciências e Tecnologia e estudante de Engenharia da Computação pela Universidade Federal do Rio Grande do Norte (UFRN). <br/><br/> Também faço parte do programa de residência em Tecnologia da Informação no Tribunal Regional Federal da 5ª Região (Pós-graduação). <br/><br/> Possuo experiência nas ferramentas: HTML5, CSS3, Sass, Bootstrap, TailwindCSS, JQuery, React, React Native, Flutter, Next.Js, NodeJS, Wordpress, Angular e Laravel. Linguagens de programação já utilizadas: Python, JavaScript, Typescript, PHP, C, C# e C++. <br/><br/> Usuário Linux, amante do Front-end e entusiasta da segurança da informação. <br/><br/> Chá mate, Lo-fi, Cyberpunk Theme e praias vazias ♥")
+                  .typeString("<br/><br/> Olá, me chamo Arthur Balboa. Sou Desenvolvedor web e mobile. Possuo Técnico em Redes de computadores, sou Bacharel em Ciências e Tecnologia e estudante de Engenharia da Computação pela Universidade Federal do Rio Grande do Norte (UFRN). <br/><br/> Também faço parte do programa de residência em Tecnologia da Informação (TI/IMD - UFRN) no Tribunal Regional Federal da 5ª Região (Pós-graduação). <br/><br/> Possuo experiência nas ferramentas: HTML5, CSS3, Sass, Bootstrap, TailwindCSS, JQuery, React, React Native, Flutter, Next.Js, NodeJS, Wordpress, Angular, Ionic e Laravel. Linguagens de programação já utilizadas: Python, JavaScript, Typescript, PHP, C, C# e C++. <br/><br/> Usuário Linux, amante do Front-end e entusiasta da segurança da informação. <br/><br/> Chá mate, Lo-fi e praias vazias ♥")
                   .pauseFor(1000)
                   .start()
               }}
@@ -188,24 +187,36 @@ const Home: NextPage = () => {
       </div>
 
       <div id="project" className="bg-indigo-900 py-10 h-full w-full flex flex-col items-center justify-center relative ">
-        <h1 className='text-teal-400 text-4xl py-12 font-extrabold'>Projetos</h1>
+        <h1 className='text-white text-4xl py-12 font-extrabold'>Projetos</h1>
         <div className="flex flex-col lg:flex-row justify-around">
-          <div
-            className="relative flex flex-col items-center pb-10 mx-6 md:mx-0"
-          >
-            <img src="me.png" className="rounded-full w-96" alt="..." />
-            <h1 className='text-white text-2xl py-5 font-extrabold'>Lore ipsim</h1>
+          <div className="relative flex flex-col items-center pb-10 mx-6 md:mr-6">
+            <div className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-white">
+              <img src="pje.png" className="w-40" alt="..." />
+            </div>
+            <h1 className='text-teal-400 text-2xl py-5 font-extrabold'>Mini Pje</h1>
+          </div>
+          <div className="relative flex flex-col items-center pb-10 mx-6 md:mr-6">
+            <div className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-white">
+              <img src="pje.png" className="w-40" alt="..." />
+            </div>
+            <h1 className='text-teal-400 text-2xl py-5 font-extrabold'>Mini Pje</h1>
+          </div>
+          <div className="relative flex flex-col items-center pb-10 mx-6 md:mr-6">
+            <div className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-white">
+              <img src="pje.png" className="w-40" alt="..." />
+            </div>
+            <h1 className='text-teal-400 text-2xl py-5 font-extrabold'>Mini Pje</h1>
           </div>
         </div>
       </div>
 
       <div id="contact" className="py-10 h-full w-full flex flex-col items-center justify-center relative ">
-        <h1 className='text-teal-400 text-4xl py-12 font-extrabold'>Contato</h1>
+        <h1 className='text-white text-4xl py-12 font-extrabold'>Contato</h1>
         <div className="flex flex-col lg:flex-row ml-16 self-start">
           <div
             className="relative flex flex-col items-center pb-10 mx-6 md:mx-0"
           >
-            <h1 className='text-white text-2xl py-5 font-extrabold'>Lore ipsim</h1>
+            <h1 className='text-teal-400 text-2xl py-5 font-extrabold'>Lore ipsim</h1>
           </div>
         </div>
       </div>
