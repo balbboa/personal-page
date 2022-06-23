@@ -210,13 +210,13 @@ const Home: NextPage = () => {
             <h1 className='text-white text-2xl py-5 pt-9 font-extrabold'>RotaWeb</h1>
             <p className='text-teal-400 text-center font-extrabold'>Plataforma de gestão da PMRN</p>
           </div>
-          <div className="relative flex flex-col justify-center items-center pb-10 mx-6 md:mr-6">
+          {/* <div className="relative flex flex-col justify-center items-center pb-10 mx-6 md:mr-6">
             <a className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
               <img src="money.png" className="w-40" alt="..." />
             </a>
             <h1 className='text-white text-2xl py-5 font-extrabold'>AppMoney</h1>
             <p className='text-teal-400 text-center font-extrabold'>App de consulta de valor de ação na IBOVESPA</p>
-          </div>
+          </div> */}
         </div>
       </div>
 
