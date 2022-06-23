@@ -190,22 +190,32 @@ const Home: NextPage = () => {
         <h1 className='text-white text-4xl py-12 font-extrabold'>Projetos</h1>
         <div className="flex flex-col lg:flex-row justify-around">
           <div className="relative flex flex-col items-center pb-10 mx-6 md:mr-6">
-            <div className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-white">
+            <a href="https://minipje.vercel.app/" target="_blank" className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
               <img src="pje.png" className="w-40" alt="..." />
-            </div>
-            <h1 className='text-teal-400 text-2xl py-5 font-extrabold'>Mini Pje</h1>
+            </a>
+            <h1 className='text-white text-2xl py-5 font-extrabold'>Mini Pje</h1>
+            <p className='text-teal-400 text-center font-extrabold'>CRUD de processos</p>
           </div>
           <div className="relative flex flex-col items-center pb-10 mx-6 md:mr-6">
-            <div className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-white">
-              <img src="pje.png" className="w-40" alt="..." />
-            </div>
-            <h1 className='text-teal-400 text-2xl py-5 font-extrabold'>Mini Pje</h1>
+          <a href="https://filminho.vercel.app/" target="_blank" className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+              <img src="movie.png" className="w-40" alt="..." />
+            </a>
+            <h1 className='text-white text-2xl py-5 font-extrabold'>Filminho</h1>
+            <p className='text-teal-400 text-center font-extrabold'>Jogo de advinhação de filmes</p>
           </div>
-          <div className="relative flex flex-col items-center pb-10 mx-6 md:mr-6">
-            <div className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-white">
-              <img src="pje.png" className="w-40" alt="..." />
-            </div>
-            <h1 className='text-teal-400 text-2xl py-5 font-extrabold'>Mini Pje</h1>
+          <div className="relative flex flex-col justify-center items-center pb-10 mx-6 md:mr-6">
+            <a className="p-24 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+              <img src="RotaWeb.avif" className="w-40" alt="..." />
+            </a>
+            <h1 className='text-white text-2xl py-5 pt-9 font-extrabold'>RotaWeb</h1>
+            <p className='text-teal-400 text-center font-extrabold'>Plataforma de gestão da PMRN</p>
+          </div>
+          <div className="relative flex flex-col justify-center items-center pb-10 mx-6 md:mr-6">
+            <a className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+              <img src="money.png" className="w-40" alt="..." />
+            </a>
+            <h1 className='text-white text-2xl py-5 font-extrabold'>AppMoney</h1>
+            <p className='text-teal-400 text-center font-extrabold'>App de consulta de valor de ação na IBOVESPA</p>
           </div>
         </div>
       </div>
@@ -216,10 +226,17 @@ const Home: NextPage = () => {
           <div
             className="relative flex flex-col items-center pb-10 mx-6 md:mx-0"
           >
-            <h1 className='text-teal-400 text-2xl py-5 font-extrabold'>Lore ipsim</h1>
+            <h1 className='text-teal-400 text-2xl py-5 font-extrabold'>Natal/RN - Brasil</h1>
+            <h1 className='text-teal-400 text-2xl py-5 font-extrabold'>(84)99412-9804</h1>
+            <h1 className='text-teal-400 text-2xl py-5 font-extrabold'>abmm_arthur@hotmail.com</h1>
+            <h1 className='text-teal-400 text-2xl py-5 font-extrabold'>cv</h1>
           </div>
         </div>
       </div>
+
+      <div id="me" className="text-teal-400 py-10 h-full w-full flex flex-col items-center justify-center relative ">
+        abzu 🍀
+</div>
     </Container >
   )
 }
