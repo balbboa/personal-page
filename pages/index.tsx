@@ -1,5 +1,5 @@
 import { Popover, Transition } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { GlobeIcon, MailIcon, MenuIcon, PhoneIcon, XIcon } from '@heroicons/react/outline'
 import type { NextPage } from 'next'
 import { Fragment } from 'react'
 import Typewriter from "typewriter-effect"
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
                 <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
                   <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                     <div className="flex items-center justify-between w-full md:w-auto">
-                      <a href="#">
+                      <a>
                         <img
                           alt="Workflow"
                           className="h-8 w-auto sm:h-10"
@@ -197,17 +197,17 @@ const Home: NextPage = () => {
             <p className='text-teal-400 text-center font-extrabold'>CRUD de processos</p>
           </div>
           <div className="relative flex flex-col items-center pb-10 mx-6 md:mr-6">
-          <a href="https://filminho.vercel.app/" target="_blank" className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+            <a href="https://filminho.vercel.app/" target="_blank" className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
               <img src="movie.png" className="w-40" alt="..." />
             </a>
             <h1 className='text-white text-2xl py-5 font-extrabold'>Filminho</h1>
             <p className='text-teal-400 text-center font-extrabold'>Jogo de advinhação de filmes</p>
           </div>
           <div className="relative flex flex-col justify-center items-center pb-10 mx-6 md:mr-6">
-            <a className="p-24 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
-              <img src="RotaWeb.avif" className="w-40" alt="..." />
+            <a className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+              <img src="RotaLogo.png" className="w-40 rounded-full" alt="..." />
             </a>
-            <h1 className='text-white text-2xl py-5 pt-9 font-extrabold'>RotaWeb</h1>
+            <h1 className='text-white text-2xl py-5 font-extrabold'>RotaWeb</h1>
             <p className='text-teal-400 text-center font-extrabold'>Plataforma de gestão da PMRN</p>
           </div>
           {/* <div className="relative flex flex-col justify-center items-center pb-10 mx-6 md:mr-6">
@@ -222,21 +222,29 @@ const Home: NextPage = () => {
 
       <div id="contact" className="py-10 h-full w-full flex flex-col items-center justify-center relative ">
         <h1 className='text-white text-4xl py-12 font-extrabold'>Contato</h1>
-        <div className="flex flex-col lg:flex-row ml-16 self-start">
+        <div className="flex flex-col pl-16 self-start">
           <div
-            className="relative flex flex-col items-center pb-10 mx-6 md:mx-0"
+            className="relative flex flex-col items-start mx-6 md:mx-0"
           >
-            <h1 className='text-teal-400 text-2xl py-5 font-extrabold'>Natal/RN - Brasil</h1>
-            <h1 className='text-teal-400 text-2xl py-5 font-extrabold'>(84)99412-9804</h1>
-            <h1 className='text-teal-400 text-2xl py-5 font-extrabold'>abmm_arthur@hotmail.com</h1>
-            <h1 className='text-teal-400 text-2xl py-5 font-extrabold'>cv</h1>
+            <div className="flex flex-row items-center text-teal-400 py-1">
+              <GlobeIcon className="h-6 w-6 mr-2" aria-hidden="true" />
+              <h1 className='font-extrabold'>Natal/RN - Brasil</h1>
+            </div>
+            <div className="flex flex-row items-center text-teal-400 py-1">
+              <PhoneIcon className="h-6 w-6 mr-2" aria-hidden="true" />
+              <h1 className='font-extrabold'>(84)99412-9804 [WhatsApp]</h1>
+            </div>
+            <div className="flex flex-row items-center text-teal-400 py-1">
+              <MailIcon className="h-6 w-6 mr-2" aria-hidden="true" />
+              <h1 className='font-extrabold'>abmm_arthur@hotmail.com</h1>
+            </div>
           </div>
         </div>
       </div>
 
-      <div id="me" className="text-teal-400 py-10 h-full w-full flex flex-col items-center justify-center relative ">
+      <div id="me" className="text-teal-400 pb-2 h-full w-full flex flex-col items-center justify-center relative ">
         abzu 🍀
-</div>
+      </div>
     </Container >
   )
 }
