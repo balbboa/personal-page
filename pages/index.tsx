@@ -1,5 +1,6 @@
 import { Popover, Transition } from '@headlessui/react'
 import { GlobeIcon, MailIcon, MenuIcon, PhoneIcon, XIcon } from '@heroicons/react/outline'
+import { Carousel } from 'flowbite-react'
 import type { NextPage } from 'next'
 import { Fragment } from 'react'
 import Typewriter from "typewriter-effect"
@@ -186,37 +187,135 @@ const Home: NextPage = () => {
         </div>
       </div>
 
-      <div id="project" className="bg-indigo-900 py-10 h-full w-full flex flex-col items-center justify-center relative ">
+      <div id="project" className="bg-indigo-900 py-10 h-full w-full flex overflow-hidden flex-col items-center justify-center relative ">
         <h1 className='text-white text-4xl py-12 font-extrabold'>Projetos</h1>
-        <div className="flex flex-col lg:flex-row justify-around">
-          <div className="relative flex flex-col items-center pb-10 mx-6 md:mr-6">
-            <a href="https://minipje.vercel.app/" target="_blank" className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
-              <img src="pje.png" className="w-40" alt="..." />
-            </a>
-            <h1 className='text-white text-2xl py-5 font-extrabold'>Mini Pje</h1>
-            <p className='text-teal-400 text-center font-extrabold'>CRUD de processos</p>
+        <div className="hidden md:block">
+        <Carousel slideInterval={100000}>
+          {/* --- MD+ --- */}
+          <div className="relative flex flex-row justify-center items-center">
+            <div className="flex flex-col justify-center items-center pb-10 mx-6 md:mr-6">
+              <a href="https://quarkrh.com.br/login.jsf" target="_blank" className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+                <img src="RH.png" className="w-40 rounded-full" alt="..." />
+              </a>
+              <h1 className='text-white text-2xl py-5 font-extrabold'>QuarkRH</h1>
+              <p className='text-teal-400 text-center font-extrabold pb-5'>Sistema RH - Gestão de pessoas</p>
+            </div>
+            <div className="flex flex-col justify-center items-center pb-10 mx-6 md:mr-6">
+              <a className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+                <img src="amapa.png" className="w-40" alt="..." />
+              </a>
+              <h1 className='text-white text-2xl py-5 font-extrabold'>Sigeduc AP</h1>
+              <p className='text-teal-400 text-center font-extrabold pb-5'>FrontEnd matrículas no Amapá</p>
+            </div>
+            <div className="flex flex-col justify-center items-center pb-10 mx-6 md:mr-6">
+              <a className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+                <img src="RotaLogo.png" className="w-40 rounded-full" alt="..." />
+              </a>
+              <h1 className='text-white text-2xl py-5 font-extrabold'>RotaWeb</h1>
+              <p className='text-teal-400 text-center font-extrabold pb-5'>Plataforma de gestão da PMRN</p>
+            </div>
           </div>
-          <div className="relative flex flex-col items-center pb-10 mx-6 md:mr-6">
-            <a href="https://filminho.vercel.app/" target="_blank" className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
-              <img src="movie.png" className="w-40" alt="..." />
-            </a>
-            <h1 className='text-white text-2xl py-5 font-extrabold'>Filminho</h1>
-            <p className='text-teal-400 text-center font-extrabold'>Jogo de advinhação de filmes</p>
+          <div className="relative flex flex-row justify-center items-center">
+            <div className="flex flex-col justify-center items-center pb-10 mx-6 md:mr-6">
+              <a className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+                <img src="pjeLogo.png" className="w-40" alt="..." />
+              </a>
+              <h1 className='text-white text-2xl py-5 font-extrabold'>PJe Mobile 2.0</h1>
+              <p className='text-teal-400 text-center font-extrabold pb-5'>App PJe Mobile</p>
+            </div>
+            <div className="flex flex-col justify-center items-center pb-10 mx-6 md:mr-6">
+              <a href="https://minipje.vercel.app/" target="_blank" className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+                <img src="pje.png" className="w-40" alt="..." />
+              </a>
+              <h1 className='text-white text-2xl py-5 font-extrabold'>Mini Pje</h1>
+              <p className='text-teal-400 text-center font-extrabold pb-5'>CRUD de processos</p>
+            </div>
+            <div className="flex flex-col items-center pb-10 mx-6 md:mr-6">
+              <a href="https://filminho.vercel.app/" target="_blank" className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+                <img src="movie.png" className="w-40" alt="..." />
+              </a>
+              <h1 className='text-white text-2xl py-5 font-extrabold'>Filminho</h1>
+              <p className='text-teal-400 text-center font-extrabold pb-5'>Jogo de advinhação de filmes</p>
+            </div>
           </div>
-          <div className="relative flex flex-col justify-center items-center pb-10 mx-6 md:mr-6">
-            <a className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
-              <img src="RotaLogo.png" className="w-40 rounded-full" alt="..." />
-            </a>
-            <h1 className='text-white text-2xl py-5 font-extrabold'>RotaWeb</h1>
-            <p className='text-teal-400 text-center font-extrabold'>Plataforma de gestão da PMRN</p>
+          <div className="relative flex flex-row justify-center items-center">
+            <div className="flex flex-col justify-center items-center pb-10 mx-6 md:mr-6">
+              <a href="https://balboa-swapi.vercel.app/" target="_blank" className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+                <img src="death-star.png" className="w-40" alt="..." />
+              </a>
+              <h1 className='text-white text-2xl py-5 font-extrabold'>Swapi API</h1>
+              <p className='text-teal-400 text-center font-extrabold pb-5'>Consulta dados Star Wars</p>
+            </div>
+            <div className="flex flex-col justify-center items-center pb-10 mx-6 md:mr-6">
+              <a className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+                <img src="money.png" className="w-40" alt="..." />
+              </a>
+              <h1 className='text-white text-2xl py-5 font-extrabold'>AppMoney</h1>
+              <p className='text-teal-400 text-center font-extrabold pb-5'>App de consulta de valor de ações</p>
+            </div>
           </div>
-          {/* <div className="relative flex flex-col justify-center items-center pb-10 mx-6 md:mr-6">
-            <a className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
-              <img src="money.png" className="w-40" alt="..." />
-            </a>
-            <h1 className='text-white text-2xl py-5 font-extrabold'>AppMoney</h1>
-            <p className='text-teal-400 text-center font-extrabold'>App de consulta de valor de ação na IBOVESPA</p>
-          </div> */}
+          </Carousel>
+          </div>
+          {/* --- MOBILE --- */}
+          <div className="block md:hidden">
+          <Carousel slideInterval={100000}>
+            <div className="flex flex-col relative items-center pb-10 mx-auto md:mr-6">
+              <a href="https://quarkrh.com.br/login.jsf" target="_blank" className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+                <img src="RH.png" className="w-40 rounded-full" alt="..." />
+              </a>
+              <h1 className='text-white text-2xl py-5 font-extrabold'>QuarkRH</h1>
+              <p className='text-teal-400 text-center font-extrabold pb-5'>Sistema RH - Gestão de pessoas</p>
+            </div>
+            <div className="flex flex-col relative justify-center items-center pb-10 mx-auto md:mr-6">
+              <a className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+                <img src="amapa.png" className="w-40" alt="..." />
+              </a>
+              <h1 className='text-white text-2xl py-5 font-extrabold'>Sigeduc AP</h1>
+              <p className='text-teal-400 text-center font-extrabold pb-5'>FrontEnd matrículas no Amapá</p>
+          </div>
+            <div className="flex flex-col relative justify-center items-center pb-10 mx-auto md:mr-6">
+              <a className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+                <img src="RotaLogo.png" className="w-40 rounded-full" alt="..." />
+              </a>
+              <h1 className='text-white text-2xl py-5 font-extrabold'>RotaWeb</h1>
+              <p className='text-teal-400 text-center font-extrabold pb-5'>Plataforma de gestão da PMRN</p>
+            </div>
+            <div className="flex flex-col relative justify-center items-center pb-10 mx-auto md:mr-6">
+              <a className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+                <img src="pjeLogo.png" className="w-40" alt="..." />
+              </a>
+              <h1 className='text-white text-2xl py-5 font-extrabold'>PJe Mobile 2.0</h1>
+              <p className='text-teal-400 text-center font-extrabold pb-5'>App PJe Mobile</p>
+          </div>
+            <div className="flex flex-col relative justify-center items-center pb-10 mx-auto md:mr-6">
+              <a href="https://minipje.vercel.app/" target="_blank" className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+                <img src="pje.png" className="w-40" alt="..." />
+              </a>
+              <h1 className='text-white text-2xl py-5 font-extrabold'>Mini Pje</h1>
+              <p className='text-teal-400 text-center font-extrabold pb-5'>CRUD de processos</p>
+          </div>
+            <div className="flex flex-col relative items-center pb-10 mx-auto md:mr-6">
+              <a href="https://filminho.vercel.app/" target="_blank" className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+                <img src="movie.png" className="w-40" alt="..." />
+              </a>
+              <h1 className='text-white text-2xl py-5 font-extrabold'>Filminho</h1>
+              <p className='text-teal-400 text-center font-extrabold pb-5'>Jogo de advinhação de filmes</p>
+            </div>
+            <div className="flex flex-col relative justify-center items-center pb-10 mx-auto md:mr-6">
+              <a href="https://balboa-swapi.vercel.app/" target="_blank" className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+                <img src="death-star.png" className="w-40" alt="..." />
+              </a>
+              <h1 className='text-white text-2xl py-5 font-extrabold'>Swapi API</h1>
+              <p className='text-teal-400 text-center font-extrabold pb-5'>Consulta dados Star Wars</p>
+            </div>
+            <div className="flex flex-col relative justify-center items-center pb-10 mx-auto md:mr-6">
+              <a className="p-10 rounded-full cursor-pointer hover:opacity-80 bg-violet-400">
+                <img src="money.png" className="w-40" alt="..." />
+              </a>
+              <h1 className='text-white text-2xl py-5 font-extrabold'>AppMoney</h1>
+              <p className='text-teal-400 text-center font-extrabold pb-5'>App de consulta de valor de ações</p>
+            </div>
+        </Carousel>
         </div>
       </div>
 
